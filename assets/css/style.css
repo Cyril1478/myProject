@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1400px;
+    border: 1px solid black;
+    padding: 1em;
+    height: 250vh;
+    background-color: rgb(8, 8, 78);
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 1fr 1fr;
+}
+.container>div{
+    background-color: rgb(19, 1, 126);
+    /* border: 1px solid white; */
+}
+.container>div:first-child{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    border-radius: 10px;
+    /* height: 50px; */
+    /* height: 90px; */
+}
+.container>div:first-child h1{
+    color: white;
+    /* margin-bottom: 550px; */
+}
+.container>div:first-child ul{
+    display: flex;
+    gap: 40px;
+    margin-right: 35px;
+}
+.container>div:first-child ul li{
+    list-style: none;
+    cursor: pointer;
+    /* margin-bottom: 550px; */
+}
+.container>div:first-child ul li a:hover{
+    color: skyblue;
+}
+.container>div:first-child ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.container>div:nth-child(2){
+    grid-column: 1/4;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 380px;
+    /* margin-bottom: 520px; */
+    position: relative;
+}
+.container>div:nth-child(2) img{
+    width: 1350px;
+    height: 380px;
+    margin: auto;
+}
+.container>div:nth-child(2) h1{
+    color: white;
+    position: absolute;
+    top: 170px;
+    right: 450px;
+}
+.container>div:nth-child(2) p{
+    color: white;
+    position: absolute;
+    top: 210px;
+    right: 580px;
+}
+.container>div:nth-child(2) button{
+    padding: 10px;
+    background-color: rgb(151, 220, 243);
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 240px;
+    right: 600px;
+}
+.container>div:nth-child(2) button:hover{
+    background-color: blue;
+    transition: ease-in-out 0.5s;
+}
+.container>div:nth-child(3){
+    grid-column: 1/2;
+    border-radius: 10px;
+    height: 220px;
+    position: relative;
+}
+.container>div:nth-child(3) img{
+    width: 90px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.container>div:nth-child(3) h4{
+    color: white;
+    position: absolute;
+    top: 30px;
+    left: 120px;
+}
+.container>div:nth-child(3) .first{
+    color: white;
+    position: absolute;
+    top: 50px;
+    left: 120px;
+}
+.container>div:nth-child(3) .second{
+    color: white;
+    position: absolute;
+    top: 110px;
+    left: 5px;
+}
+.container>div:nth-child(4){
+    grid-column: 2/4;
+    border-radius: 10px;
+    position: relative;
+    height: 220px;
+}
+.container>div:nth-child(4) h3{
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 9px;
+}
+.container>div:nth-child(4) .one{
+    background-color:  rgb(39, 33, 71);
+    color: white;
+    width: 635px;
+    /* border: 2px solid white; */
+    padding: 10px;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0 10px; */
+}
+.container>div:nth-child(4) .two{
+    background-color:  rgb(39, 33, 71);
+    color: white;
+    width: 635px;
+    /* border: 2px solid white; */
+    padding: 10px;
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0 10px; */
+}
+.container>div:nth-child(4) .three{
+    background-color:  rgb(39, 33, 71);
+    color: white;
+    width: 635px;
+    /* border: 2px solid white; */
+    padding: 10px;
+    position: absolute;
+    top: 150px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0 10px; */
+}
+.container>div:nth-child(5){
+    grid-column: 1/4;
+    display: flex;
+    border-radius: 10px;
+    position: relative;
+}
+.container>div:nth-child(5) h3{
+    color: white;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+}
+.container>div:nth-child(5) .box{
+    width: 35%;
+    margin: 10px;
+    height: 40vh;
+    margin-top: 40px;
+    /* overflow: hidden; */
+    /* background-color: purple; */
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+    padding: 15px;
+    text-align: center;
+    /* cursor: pointer; */
+}
+.container>div:nth-child(5) img{
+    width: 250px;
+    height: 110px;
+    /* position: absolute; */
+
+}
+.container>div:nth-child(5) h1{
+    color: white;
+    margin-right: 180px;
+    font-size: 13px;
+}
+.container>div:nth-child(5) p{
+    color: white;
+    margin-right: 15px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.container>div:nth-child(5) button{
+    padding: 8px;
+    width: 137px;
+    margin-top: 19px;
+    cursor: pointer;
+    background-color: aqua;
+    border-radius: 6px;
+}
+.container>div:nth-child(5) button:hover{
+    background-color: rgb(36, 160, 160);
+    transition: ease-in-out 0.5s;
+}
+.container>div:nth-child(5) .blue{
+    background-color:  rgb(19, 1, 126);
+    color: white;
+}
+.container>div:nth-child(5) .blue:hover{
+    background-color: rgb(79, 169, 204);
+    transition: ease-in-out 0.5s;
+}
+.container>div:nth-child(6){
+    grid-column: 1/4;
+    border-radius: 10px;
+}
+.container>div:nth-child(6) h1{
+    color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.container>div:nth-child(6) input{
+    width: 98%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 13px;
+}
+.container>div:nth-child(6) #message{
+    height: 120px;
+}
+.container>div:nth-child(6) button{
+    padding: 10px;
+    width: 98%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 13px;
+    margin-top: 53px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: aqua;
+}
+.container>div:nth-child(6) button:hover{
+    background-color: rgb(36, 160, 160);
+    transition: ease-in-out 0.5s;
+}
+.container>div:last-child{
+    grid-column: 1/4;
+    border-radius: 10px;
+}
+.container>div:last-child .foot1{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.container>div:last-child .foot2{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container>div:last-child .foot2 span{
+    cursor: pointer;
+    margin-left: 4px;
+}
+
+
+@media screen and (max-width: 480px) {
+    .container {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .container > div {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    
+    .container > div:first-child {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    .container > div:first-child ul {
+        display: none;
+    }
+
+    
+    .container > div:nth-child(2) {
+        height: auto;
+        position: relative;
+    }
+
+    .container > div:nth-child(2) img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container > div:nth-child(2) h1,
+    .container > div:nth-child(2) p,
+    .container > div:nth-child(2) button {
+        position: absolute;
+        left: 20px;
+        right: auto;
+    }
+
+    .container > div:nth-child(2) h1 {
+        top: 100px;
+        font-size: 25px;
+    }
+
+    .container > div:nth-child(2) p {
+        top: 140px;
+    }
+
+    .container > div:nth-child(2) button {
+        top: 170px;
+        width: auto;
+    }
+
+    
+    .container > div:nth-child(3),
+    .container > div:nth-child(4),
+    .container > div:nth-child(5),
+    .container > div:nth-child(6),
+    .container > div:last-child {
+        height: auto;
+        position: relative;
+        padding: 15px;
+    }
+
+    
+    .container > div:nth-child(4) .one,
+    .container > div:nth-child(4) .two,
+    .container > div:nth-child(4) .three {
+        width: 100%;
+        position: static;
+        margin-top: 10px;
+    }
+
+    
+    .container > div:nth-child(5) {
+        display: block;
+    }
+
+    .container > div:nth-child(5) .box {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .container > div:nth-child(5) img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container > div:nth-child(5) button {
+        width: 48%;
+    }
+
+
+    .container > div:nth-child(6) input,
+    .container > div:nth-child(6) button {
+        width: 100%;
+        margin-left: 0;
+    }
+}

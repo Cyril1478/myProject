@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>My Portfolio</h1>
+            <ul>
+                <li><a href=""><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href=""><i class="fa-solid fa-info"></i>About</a></li>
+                <li><a href=""><i class="fa-solid fa-wrench"></i>Skills</a></li>
+                <li><a href=""><i class="fa-solid fa-camera"></i>Gallery</a></li>
+                <li><a href=""><i class="fa-solid fa-envelope"></i>Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <img src="assets/image/Whisk_1ad7b37cd3484b4bf7142d3f56bc110adr.jpeg" alt="">
+            <h1>Hello, I'm a Web Developer</h1>
+            <p>I build modern websites</p>
+            <button>Toggle Theme</button>
+        </div>
+        <div>
+            <img src="assets/image/user-avatar.jpg" alt="">
+            <h4>Student Name</h4>
+            <p class="first">Frontend Developer</p>
+            <p class="second">I am learning HTML, CSS and JavaScript and building responsive websites.</p>
+        </div>
+        <div>
+            <h3>Skills</h3>
+            <div class="one">HTML</div>
+            <div class="two">CSS Grid</div>
+            <div class="three">JavaScript</div>
+        </div>
+        <div>
+            <h3>Projects</h3>
+            <div class="box">
+                <img src="assets/image/11.pnge.jpg" alt="">
+                <h1>Project One</h1>
+                <p>Simple Website Project.</p>
+                <button><strong>Live</strong></button>
+                <button class="blue"><strong>Code</strong></button>
+            </div>
+
+            <div class="box">
+                <img class="img" src="assets/image/12.pnge.jpeg" alt="">
+                <h1>Project Two</h1>
+                <p>Responsive Design Project.</p>
+                <button><strong>Live</strong></button>
+                <button class="blue"><strong>Code</strong></button>
+            </div>
+
+            <div class="box">
+                <img class="img" src="assets/image/13.pnge.jpg" alt="">
+                <h1>Project Three</h1>
+                <p>JavaScript Mini App.</p>
+                <button><strong>Live</strong></button>
+                <button class="blue"><strong>Code</strong></button>
+            </div>
+
+            <div class="box">
+                <img class="img" src="assets/image/17.jpeg" alt="">
+                <h1>Project Four</h1>
+                <p>Portfolio Layout.</p>
+                <button><strong>Live</strong></button>
+                <button class="blue"><strong>Code</strong></button>
+            </div>
+        
+        </div>
+        <div>
+            <h1>Contact</h1>
+            <input type="text" id="name" placeholder="Enter Your Name"><br>
+            <input type="text" id="email" placeholder="Enter Your Email"><br>
+            <input type="text" id="message" placeholder="Explain Your Work"><br>
+            <button id="button" onclick="sent()">Send</button>
+        </div>
+        <div>
+            <footer>
+                <p class="foot1">@ 2026 Student Portfolio</p>
+                <p class="foot2">Follow: <span>Twitter | GitHub | Linkedin</span></p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+    function sent() {
+        let userName = document.getElementById("name").value;
+        alert(userName + ", Message sent successfully!");
+    }
+</script>
+</body>
+</html>
